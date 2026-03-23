@@ -15,6 +15,6 @@ public abstract class Equipment
 
     public override string ToString()
     {
-        return $"{Id}: {Name} (Available: {IsAvailable})";
+        return $"{Id}: {Name} | Available: {IsAvailable}";
     }
 }
