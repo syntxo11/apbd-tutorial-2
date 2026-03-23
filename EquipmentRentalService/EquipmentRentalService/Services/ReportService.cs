@@ -4,6 +4,7 @@ namespace EquipmentRentalService.Services;
 
 public class ReportService
 {
+    Console.WriteLine("-----");
     public void PrintAllEquipment(List<Equipment> equipmentList)
     {
         Console.WriteLine("All equipment:");
