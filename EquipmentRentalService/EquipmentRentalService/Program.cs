@@ -45,7 +45,7 @@ Console.WriteLine();
 reportService.PrintOverdueRentals(rentalService.Rentals);
 Console.WriteLine();
 
-Console.WriteLine("Active rentals for student:");
+Console.WriteLine("Student active rentals:");
 foreach (var rental in rentalService.GetUserActiveRentals(1))
 {
     Console.WriteLine(rental);
