@@ -4,9 +4,9 @@ namespace EquipmentRentalService.Services;
 
 public class ReportService
 {
-    Console.WriteLine("-----");
     public void PrintAllEquipment(List<Equipment> equipmentList)
     {
+        Console.WriteLine("-----");
         Console.WriteLine("All equipment:");
         foreach (var equipment in equipmentList)
         {
@@ -16,6 +16,7 @@ public class ReportService
 
     public void PrintAvailableEquipment(List<Equipment> equipmentList)
     {
+        Console.WriteLine("-----");
         Console.WriteLine("Available equipment:");
         foreach (var equipment in equipmentList.Where(e => e.IsAvailable && !e.IsMarkedUnavailable))
         {
@@ -25,6 +26,7 @@ public class ReportService
 
     public void PrintActiveRentals(List<Rental> rentals)
     {
+        Console.WriteLine("-----");
         Console.WriteLine("Active rentals:");
         foreach (var rental in rentals.Where(r => !r.IsReturned))
         {
@@ -34,6 +36,7 @@ public class ReportService
 
     public void PrintOverdueRentals(List<Rental> rentals)
     {
+        Console.WriteLine("-----")
         Console.WriteLine("Overdue rentals:");
         foreach (var rental in rentals.Where(r => r.IsOverdue))
         {
